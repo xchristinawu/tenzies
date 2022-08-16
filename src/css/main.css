@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+    margin: 0
+}
+
+button {
+    font: inherit;
+}
+
+body {
+    background-color: #0B2434;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    height: 400px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+.instructions {
+    width: 85%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+
+.die {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.die-num {
+    font-size: 2rem;
+}
+
+.roll-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #5035FF;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.roll-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
